@@ -27,15 +27,18 @@ body{
 }
 
 #rock{
+    border-style: none;
     background-image: url('img/rock.jpg');
     background-size: cover;
     background-position: center;
     height: 200px;
     width: 200px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #paper{
+    border-style: none;
     background-image: url('img/paper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -43,15 +46,18 @@ body{
     height: 200px;
     width: 200px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #scissors{
+    border-style: none;
     background-image: url('img/scissors.jpg');
     background-size: cover;
     background-position: center;
     height: 200px;
     width: 200px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #rock:hover{
@@ -74,6 +80,7 @@ body{
     transform: scale(2);
     background: url('img/scissorpick.jpeg');
     background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     transition: ease-in 0.1s;
@@ -117,7 +124,6 @@ li{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    overflow: auto;
 }
 
 #match-list{
@@ -128,56 +134,49 @@ li{
     overflow: auto;
 }
 
-.match-scoreboard{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 20px;
-    height: 350px;
-    width: 350px;
+.match-scoreboard {
+    display: inline-grid;
+    grid-template-columns: auto auto;
     background-color: #2d5750;
+    padding: 40px;
+    
 }
-
-#player-score, #computer-score{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    height: 100px;
-    width: 100px;
-    font-weight: 700;
-    font-size: 3rem;
+  
+.match-scoreboard-item {
     background-color: #4c7870;
+    padding: 20px;
+    margin: 5px;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 40px;
+
+}
+  
+.item-text{
+    background-color: #2d5750;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    width: 80px;
 }
 
-.pScore{
-    position: absolute;
-    bottom: 16rem;
-    right: 32.2vw;
-    font-size: 1rem;
-}
-
-.cScore{
-    position: absolute;
-    bottom: 16rem;
-    right: 23.9vw;
-    font-size: 1rem;
-}
 
 .reset{
-    position: absolute;
-    bottom: 6rem;
-    right: 28.97vw;
     border-style: none;
     border-radius: 7px;
-    padding: 10px;
-    font-weight: 700;
+    height: 80px;
+    width: 130px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: 'Anton', sans-serif;
     color: white;
-    background-color: #6da89d;
+    background-image: linear-gradient(90deg, #2b3f8a, #ad4e5b);
 }
 
 .reset:hover{
-    background-color: #4c7870;
+    background-image: linear-gradient(90deg, #1e2c5f, #6d2f38);
     cursor: pointer;
-    transition: ease-in 0.1s;
 }
