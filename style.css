@@ -27,7 +27,7 @@ body{
 }
 
 #rock{
-    background-image: url('../img/rock.jpg');
+    background-image: url('img/rock.jpg');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -36,7 +36,7 @@ body{
 }
 
 #paper{
-    background-image: url('../img/paper.jpg');
+    background-image: url('img/paper.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -46,7 +46,7 @@ body{
 }
 
 #scissors{
-    background-image: url('../img/scissors.jpg');
+    background-image: url('img/scissors.jpg');
     background-size: cover;
     background-position: center;
     height: 200px;
@@ -56,7 +56,7 @@ body{
 
 #rock:hover{
     transform: scale(2);
-    background: url('../img/rockpick.jpg');
+    background: url('img/rockpick.jpg');
     background-size: cover;
     background-position: center;
     transition: ease-in 0.1s;
@@ -64,7 +64,7 @@ body{
 
 #paper:hover{
     transform: scale(2);
-    background: url('../img/paperpick.jpg');
+    background: url('img/paperpick.jpg');
     background-size: cover;
     background-position: center;
     transition: ease-in 0.1s;
@@ -72,7 +72,7 @@ body{
 
 #scissors:hover{
     transform: scale(2);
-    background: url('../img/scissorpick.jpeg');
+    background: url('img/scissorpick.jpeg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
