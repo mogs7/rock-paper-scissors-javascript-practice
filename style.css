@@ -1,0 +1,183 @@
+:root{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-image: linear-gradient(90deg, #253A83, #B14B5B);
+}
+
+.button-container{
+    padding: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#rock{
+    background-image: url('/img/rock.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+#paper{
+    background-image: url('/img/paper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+#scissors{
+    background-image: url('/img/scissors.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+#rock:hover{
+    transform: scale(2);
+    background: url('/img/rockpick.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: ease-in 0.1s;
+}
+
+#paper:hover{
+    transform: scale(2);
+    background: url('/img/paperpick.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: ease-in 0.1s;
+}
+
+#scissors:hover{
+    transform: scale(2);
+    background: url('/img/scissorpick.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: ease-in 0.1s;
+}
+
+/*match result added to match list (ul) */
+.player-win{
+    display: flex;
+    justify-content: space-between;
+    background-color: #028229;
+    text-align: left;
+}
+
+.computer-win{
+    display: flex;
+    justify-content: space-between;
+    background-color: #BC3921;
+    text-align: left;
+}
+
+.draw{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7AD45;
+}
+
+li{
+    margin: 10px;
+    padding: 0;
+    border-style: none;
+    list-style-type: none;
+}
+
+
+.date-div{
+    margin: 10px;
+    padding: 0;
+}
+
+.match-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: auto;
+}
+
+#match-list{
+    margin: 0;
+    padding: 0;
+    height: 350px;
+    width: 350px;
+    overflow: auto;
+}
+
+.match-scoreboard{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    height: 350px;
+    width: 350px;
+    background-color: #2d5750;
+}
+
+#player-score, #computer-score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    height: 100px;
+    width: 100px;
+    font-weight: 700;
+    font-size: 3rem;
+    background-color: #4c7870;
+}
+
+.pScore{
+    position: absolute;
+    bottom: 16rem;
+    right: 32.2vw;
+    font-size: 1rem;
+}
+
+.cScore{
+    position: absolute;
+    bottom: 16rem;
+    right: 23.9vw;
+    font-size: 1rem;
+}
+
+.reset{
+    position: absolute;
+    bottom: 6rem;
+    right: 28.97vw;
+    border-style: none;
+    border-radius: 7px;
+    padding: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: #6da89d;
+}
+
+.reset:hover{
+    background-color: #4c7870;
+    cursor: pointer;
+    transition: ease-in 0.1s;
+}
